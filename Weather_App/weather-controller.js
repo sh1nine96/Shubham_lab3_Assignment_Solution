@@ -21,8 +21,8 @@ class WeatherController {
       const weatherAPI = new WeatherAPI();
       let weatherControllerObj = eventTarget.param1;
       weatherAPI.invoke(userData).then((responseJSON) => {
-        console.log("--------------");
-        console.log(responseJSON);
+        // console.log("--------------");
+        // console.log(responseJSON);
 
         weatherControllerObj.updateUI(responseJSON);
       });
@@ -43,8 +43,8 @@ class WeatherController {
     descriptionElement.innerText = `${responseJSON.weather[0].main}`;
 
     let lowHighElement = document.querySelector(".weather .low-hi");
-    lowHighElement.innerHTML = `${responseJSON.main.temp_min} ${DEGREE_CELCIUS_SYMBOL} /
-    ${responseJSON.main.temp_max} ${DEGREE_CELCIUS_SYMBOL}`;
+    lowHighElement.innerHTML = `min: ${responseJSON.main.temp_min} ${DEGREE_CELCIUS_SYMBOL} /
+    max: ${responseJSON.main.temp_max} ${DEGREE_CELCIUS_SYMBOL}`;
 
     let humidityElement = document.querySelector(".weather .humidity");
     humidityElement.innerText = `humidity: ${responseJSON.main.humidity}%`;

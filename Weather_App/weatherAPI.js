@@ -31,7 +31,7 @@ class WeatherAPI {
     this.apiURL.searchParams.append("appid", API_KEY);
     this.apiURL.searchParams.append("units", "metric");
 
-    console.log(`url is ${this.apiURL}`);
+    // console.log(`url is ${this.apiURL}`);
   }
 }
 

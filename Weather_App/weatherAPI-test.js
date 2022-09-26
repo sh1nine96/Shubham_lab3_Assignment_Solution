@@ -10,8 +10,8 @@ function testURLbuilder() {
 function testAPI() {
   const weatherAPI = new WeatherAPI();
   let responseJSON = weatherAPI.invoke("agra").then((response) => {
-    console.log("--------------");
-    console.log(response);
+    // console.log("--------------");
+    // console.log(response);
   });
 }
 
