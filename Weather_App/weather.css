@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 120%;
+    margin: 0;
+    background: #555;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('https://source.unsplash.com/random');
+    background-size: cover;
+}
+
+.card {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: 1em;
+  }
+
+  .search{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+
+  .search-bar{
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    background: #c8c8c82b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 80px);
+  }
+
+  .search-bar:hover{
+    transform: scale(1.02);
+  }
+
+  h1.temp{
+    margin: 0;
+  }
+
+  /* Please ignore the following commented css */
+
+  /* button{
+    margin: 0.5em;
+    border-radius: 50%;
+    height: 50px;
+    border: none;
+    width: 50px;
+    outline: none;
+    background: #7c7c7c;
+    color: white;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+  }
+
+  button:hover{
+    background-color:#7c7c7c2b;
+    transform: scale(1.1);
+  } */
+
+ 
